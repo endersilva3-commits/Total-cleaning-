@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&A Total Cleaning LLC | Servicios Profesionales de Limpieza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #0A2540; /* El azul marino del logo */
+            --clean-white: #FFFFFF;
+            --accent-blue: #1E40AF;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .bg-brand { background-color: var(--primary-blue); }
+        .text-brand { color: var(--primary-blue); }
+        .hero-gradient {
+            background: linear-gradient(rgba(10, 37, 64, 0.8), rgba(10, 37, 64, 0.6)), 
+                        url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navegación -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <!-- Recreación minimalista del logo A&A -->
+                <div class="border-2 border-brand p-1 font-bold text-brand flex items-center justify-center" style="width: 45px; height: 45px;">
+                    A&A
+                </div>
+                <div class="hidden md:block">
+                    <span class="block text-sm font-black tracking-tighter leading-none text-brand">TOTAL CLEANING</span>
+                    <span class="block text-xs font-bold tracking-widest text-brand">LLC</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#inicio" class="hover:text-blue-600 transition">Inicio</a>
+                <a href="#servicios" class="hover:text-blue-600 transition">Servicios</a>
+                <a href="#nosotros" class="hover:text-blue-600 transition">Nosotros</a>
+                <a href="#contacto" class="bg-brand text-white px-6 py-2 rounded-full hover:bg-blue-800 transition">Presupuesto Gratis</a>
+            </div>
+            
+            <button class="md:hidden text-2xl" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient h-[600px] flex items-center text-white">
+        <div class="container mx-auto px-6 text-center md:text-left">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Excelencia en Limpieza <br> para Espacios Exclusivos
+            </h1>
+            <p class="text-xl mb-8 max-w-2xl text-gray-200">
+                Soluciones integrales de limpieza corporativa y residencial con el estándar de calidad de A&A Total Cleaning LLC. Transformamos su entorno en un espacio impecable.
+            </p>
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <a href="#contacto" class="bg-white text-brand px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg text-center">
+                    Agendar una Cita
+                </a>
+                <a href="#servicios" class="border-2 border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-brand transition text-center">
+                    Ver Nuestros Servicios
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas Rápidas -->
+    <section class="bg-brand py-12 text-white">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+                <p class="text-4xl font-bold mb-1">500+</p>
+                <p class="text-sm opacity-80 uppercase tracking-wide">Clientes Felices</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold mb-1">100%</p>
+                <p class="text-sm opacity-80 uppercase tracking-wide">Garantía de Calidad</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold mb-1">24/7</p>
+                <p class="text-sm opacity-80 uppercase tracking-wide">Disponibilidad</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand mb-4">Nuestros Servicios</h2>
+                <div class="w-20 h-1 bg-brand mx-auto mb-4"></div>
+                <p class="text-gray-600">Ofrecemos soluciones personalizadas para cada tipo de necesidad.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Comercial -->
+                <div class="group p-8 border border-gray-100 rounded-2xl hover:shadow-2xl transition duration-300 bg-gray-50">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 text-brand text-2xl group-hover:bg-brand group-hover:text-white transition">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Limpieza Comercial</h3>
+                    <p class="text-gray-600 mb-6">Mantenimiento impecable para oficinas, locales comerciales y edificios corporativos.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Oficinas corporativas</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Centros médicos</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Retail y showrooms</li>
+                    </ul>
+                </div>
+
+                <!-- Residencial -->
+                <div class="group p-8 border border-gray-100 rounded-2xl hover:shadow-2xl transition duration-300 bg-gray-50">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 text-brand text-2xl group-hover:bg-brand group-hover:text-white transition">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Limpieza Residencial</h3>
+                    <p class="text-gray-600 mb-6">El cuidado que su hogar merece con personal de absoluta confianza y profesionalismo.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Limpieza profunda</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Mudanzas (In/Out)</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Mantenimiento semanal</li>
+                    </ul>
+                </div>
+
+                <!-- Especializada -->
+                <div class="group p-8 border border-gray-100 rounded-2xl hover:shadow-2xl transition duration-300 bg-gray-50">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 text-brand text-2xl group-hover:bg-brand group-hover:text-white transition">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Servicios Especiales</h3>
+                    <p class="text-gray-600 mb-6">Atención a detalles específicos que requieren equipos y técnicas profesionales.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Limpieza post-construcción</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Lavado de alfombras</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Desinfección profunda</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por qué elegirnos -->
+    <section id="nosotros" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6958?auto=format&fit=crop&w=800&q=80" alt="Personal de limpieza" class="rounded-2xl shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl hidden md:block border-l-4 border-brand">
+                        <p class="text-brand font-bold italic">"Calidad que se nota, <br> confianza que se siente."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 md:pl-16">
+                <h2 class="text-3xl font-bold text-brand mb-6">¿Por qué A&A Total Cleaning?</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="text-brand mt-1 mr-4"><i class="fas fa-shield-alt text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold mb-1">Seguridad y Confianza</h4>
+                            <p class="text-gray-600 text-sm">Contamos con personal verificado, asegurado y altamente capacitado para su tranquilidad.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-brand mt-1 mr-4"><i class="fas fa-leaf text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold mb-1">Productos Eco-Friendly</h4>
+                            <p class="text-gray-600 text-sm">Utilizamos insumos de alta calidad que protegen el medio ambiente y la salud de quienes habitan el espacio.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-brand mt-1 mr-4"><i class="fas fa-clock text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold mb-1">Puntualidad Rigurosa</h4>
+                            <p class="text-gray-600 text-sm">Valoramos su tiempo. Cumplimos con los cronogramas pactados sin excepciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto / Cotización -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-brand rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <div class="md:w-1/3 p-10 text-white flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Contáctenos</h3>
+                        <p class="text-blue-200 mb-8">¿Listo para transformar su espacio? Solicite un presupuesto sin compromiso.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-blue-300"></i>
+                            <a href="tel:2393274129" class="hover:text-blue-100 transition">239-327-4129</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-300"></i>
+                            <a href="mailto:llc.a.a.totalclean@gmail.com" class="hover:text-blue-100 transition text-sm">llc.a.a.totalclean@gmail.com</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-blue-300"></i>
+                            <span>Fort Myers, Florida, EE. UU.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-2/3 bg-white p-10">
+                    <form id="quoteForm" class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                                <input type="text" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-brand outline-none" placeholder="Su nombre">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Correo</label>
+                                <input type="email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-brand outline-none" placeholder="email@ejemplo.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Tipo de Servicio</label>
+                            <select class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-brand outline-none">
+                                <option>Limpieza Comercial</option>
+                                <option>Limpieza Residencial</option>
+                                <option>Post-Construcción</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Mensaje o Detalles</label>
+                            <textarea class="w-full px-4 py-2 border rounded-lg h-32 focus:ring-2 focus:ring-brand outline-none" placeholder="Cuéntenos sobre sus necesidades..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand text-white font-bold py-3 rounded-lg hover:bg-blue-900 transition shadow-lg">
+                            Enviar Solicitud
+                        </button>
+                    </form>
+                    <div id="successMsg" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg text-center">
+                        ¡Gracias! Nos pondremos en contacto pronto.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center border-b border-gray-800 pb-8 mb-8">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h2 class="text-xl font-bold tracking-widest uppercase">A&A Total Cleaning LLC</h2>
+                    <p class="text-gray-400 text-sm">Servicio de limpieza profesional en Fort Myers.</p>
+                </div>
+                <div class="flex space-x-6 text-2xl">
+                    <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 text-xs italic">
+                &copy; 2024 A&A Total Cleaning LLC. Todos los derechos reservados. | Fort Myers, FL.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Manejo del formulario
+        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.classList.add('hidden');
+            document.getElementById('successMsg').classList.remove('hidden');
+        });
+
+        // Botón de menú móvil (placeholder funcional simple)
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            alert('Para soporte móvil completo, aquí se activaría el menú lateral.');
+        });
+    </script>
+</body>
+</html>
